@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -41,5 +42,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         Txt_Message.text = "GAMEOVER! \nPRESS ENTER TO RESTART GAME.";
         Txt_Message.color = Color.red;
+    }
+
+    public void RestartBtn()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
