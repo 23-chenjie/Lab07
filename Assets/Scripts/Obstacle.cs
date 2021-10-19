@@ -14,4 +14,12 @@ public class Obstacle : MonoBehaviour
         else
             transform.Translate(Vector3.right * Time.deltaTime * -Speed);
     }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        if(collider.gameObject.tag == "Player")
+        {
+            GameManager.thisManager.UpdateScore(1);
+        }
+    }
 }

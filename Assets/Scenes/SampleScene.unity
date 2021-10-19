@@ -366,6 +366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AngryDuck
       objectReference: {fileID: 0}
+    - target: {fileID: 3068709404102748816, guid: fa616eb311850a54498fbc4920bda0fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -404,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
@@ -547,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 7942643919102861667, guid: 6c6e5f222f546d84ea2769878189e2dd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7942643919102861667, guid: 6c6e5f222f546d84ea2769878189e2dd,
         type: 3}
