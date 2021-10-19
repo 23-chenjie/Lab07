@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private Animation thisAnimation;
-    Rigidbody rigidbody;
+    Rigidbody m_rigidbody;
     float speed = 5f;
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        m_rigidbody = GetComponent<Rigidbody>();
         thisAnimation = GetComponent<Animation>();
         thisAnimation["Flap_Legacy"].speed = 3;
     }
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             thisAnimation.Play();
-            rigidbody.velocity = transform.up * speed;
+            m_rigidbody.velocity = transform.up * speed;
         }
     }
 
